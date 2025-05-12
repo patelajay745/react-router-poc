@@ -41,8 +41,8 @@ createRoot(document.getElementById("root")!).render(
             <Route path="setting" element={<Setting />}></Route>
             <Route path="user/:id" element={<UserProfile />}></Route>
           </Route>
-          <Route path="*" element={<NotFound />} />
         </Route>
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
