@@ -1,7 +1,7 @@
 import { createRoot } from "react-dom/client";
 import "./index.css";
 import { BrowserRouter, Route, Routes } from "react-router";
-import React, { lazy, Suspense } from "react";
+import { lazy, Suspense } from "react";
 import Layout from "./pages/Layout.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import { default as DashBoardLayout } from "./pages/Dashboard/Layout.tsx";
