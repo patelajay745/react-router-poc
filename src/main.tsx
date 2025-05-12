@@ -8,6 +8,7 @@ import { default as DashBoardLayout } from "./pages/Dashboard/Layout.tsx";
 import { default as DashBoardHome } from "./pages/Dashboard/Home.tsx";
 import Overview from "./pages/Dashboard/Overview.tsx";
 import Setting from "./pages/Dashboard/Setting.tsx";
+import UserProfile from "./pages/Dashboard/UserProfile.tsx";
 
 const Home = lazy(() => import("./pages/Home"));
 const About = lazy(() => import("./pages/About"));
@@ -38,6 +39,7 @@ createRoot(document.getElementById("root")!).render(
             <Route index element={<DashBoardHome />}></Route>
             <Route path="overview" element={<Overview />}></Route>
             <Route path="setting" element={<Setting />}></Route>
+            <Route path="user/:id" element={<UserProfile />}></Route>
           </Route>
           <Route path="*" element={<NotFound />} />
         </Route>
